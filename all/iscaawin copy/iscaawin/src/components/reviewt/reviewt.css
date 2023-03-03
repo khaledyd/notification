@@ -1,0 +1,18 @@
+*{
+    box-sizing: border-box;
+    padding: 0px;
+    margin: 0px;
+}
+.reviewt{
+    width: 1350px;
+    height: 704px;
+    background-color: #7F5283;
+    margin-top: 604;
+    margin-left:60px;
+}
+.reviewt-text{
+    margin-left: 40%;
+  padding-top: 50px;
+  color: #FEFBF6;
+  font-family: 'Krona One', sans-serif;
+}

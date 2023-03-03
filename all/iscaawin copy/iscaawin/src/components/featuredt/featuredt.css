@@ -1,0 +1,14 @@
+*{
+    box-sizing: border-box;
+    padding: 0px;
+    margin: 0px;
+}
+
+.featured-name{
+margin-bottom: 144px;
+font-family: 'Krona One', sans-serif;
+margin-left: 120px;
+padding-top: 40px;
+color: #7F5283;
+margin-top: -1009px;
+}

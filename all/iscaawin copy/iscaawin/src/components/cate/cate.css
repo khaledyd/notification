@@ -1,0 +1,30 @@
+*{
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+.cate{
+    margin-top: 650px;
+    margin-left: 120px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.case-items{
+
+}
+.cate-text{
+    padding-bottom: 50px;
+    font-family: 'Krona One', sans-serif;
+    margin-left: 30%;
+    color: #7F5283;
+}
+.cate-info-img{
+padding-bottom: 15px;
+}
+.cate-info-title{
+    font-family: 'Syne', sans-serif;
+    font-size: 24px;
+    color: #3D3C42;
+
+}

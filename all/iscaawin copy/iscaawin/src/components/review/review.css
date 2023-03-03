@@ -1,0 +1,40 @@
+*{
+  box-sizing: border-box;
+  padding: 0px;
+  margin: 0px;
+}
+.review{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+ 
+  height: 200px;
+  margin-left: 10px;
+  color: #FEFBF6;
+  font-family: 'Krona One', sans-serif;
+
+
+}
+.review-allinfo{
+  margin-top: 400px;
+  display: flex;
+  flex-direction: row;
+  padding: 50px;
+ 
+}
+.box-1{
+  width: 351px;
+  height: 238px;
+  background-color: #A6D1E6;
+  padding: 70px;
+  border-radius: 15px;
+
+}
+.review-img{
+  margin-left: 90px;
+  margin-bottom: -65px;
+}
+.review-desc{
+  padding-top: 5px;
+  font-size: 10px;;
+}

@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="243.783" height="243.805" viewBox="0 0 243.783 243.805">
+  <g id="Group_5" data-name="Group 5" transform="translate(-257.751 -590)">
+    <rect id="Rectangle_1" data-name="Rectangle 1" width="105.42" height="155.58" rx="52.71" transform="translate(273.757 602.752)" fill="#f35588"/>
+    <rect id="Rectangle_7" data-name="Rectangle 7" width="153.879" height="208.29" rx="23" transform="translate(309.464 602.752)" fill="#f35588"/>
+    <rect id="Rectangle_14" data-name="Rectangle 14" width="154.729" height="133.475" rx="23" transform="translate(273.757 675.866)" fill="#ffacd8"/>
+    <rect id="Rectangle_15" data-name="Rectangle 15" width="154.729" height="48.459" rx="23" transform="translate(273.757 762.583)" fill="#f35588"/>
+    <g id="Group_2" data-name="Group 2" transform="translate(257.751 590)">
+      <path id="Path_1" data-name="Path 1" d="M0,98.919,98.919,0l73.953,73.953-98,98L52.554,149.643l75.69-75.69L98.919,44.629l-54.29,54.29L24.9,118.651Z" transform="matrix(0.695, -0.719, 0.719, 0.695, 0, 124.354)" fill="#fff"/>
+      <rect id="Rectangle_8" data-name="Rectangle 8" width="96.284" height="38.981" transform="translate(75.483 108.943)" fill="#fff"/>
+    </g>
+  </g>
+</svg>

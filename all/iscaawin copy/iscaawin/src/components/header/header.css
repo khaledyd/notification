@@ -1,0 +1,14 @@
+*{
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+.header-i{
+    margin-top: 110px;
+    margin-left: 60px;
+    width: 100px;
+}
+.header-img{
+    width: 1310px;
+    height: 532px;
+}

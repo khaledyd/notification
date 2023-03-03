@@ -1,0 +1,29 @@
+header{
+    display:  flex;
+    justify-content: center;
+}
+.header-content{
+    margin-left: 50px;
+    margin-top: 124px;
+
+}
+.header-titile{
+    padding-bottom: 20px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 40px;
+    color: #3A611C;
+
+}
+.headerp{
+    width: 55%;
+    font-family: Arial;
+    font-size: 20px;
+    font-family: 'Poppins', sans-serif;
+}
+.imgh{
+    display: flex;
+    margin-top: -210px;
+    margin-right: 66px;
+    margin-left: 85%;
+
+}

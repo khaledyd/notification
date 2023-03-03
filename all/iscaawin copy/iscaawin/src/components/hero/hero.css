@@ -1,0 +1,44 @@
+*{
+  box-sizing: border-box;
+  padding: 0px;
+  margin: 0px;
+
+}
+.hero-info{
+  display: flex;
+}
+.hero-info-1{
+  display: flex;
+  flex-direction: column;
+  width: 607px;
+  height:927px ;
+  background-color: #FEFBF6;
+  margin-left: 60px;
+  margin-top: 50px;
+  border-radius: 35px;
+}
+.hero-text{
+  padding-left: 50px;
+  margin-top: 65px;
+  font-size: 55px;
+  font-family: 'Krona One', sans-serif;
+}
+.heri-btn{
+margin-top: 50px;
+width: 384px;
+height: 143px;
+margin-left: 50px;
+font-size: 50px;
+font-family: 'Krona One', sans-serif;
+background-color: #7F5283;
+border: 0px;
+border-radius: 5px;
+color: #FEFBF6;
+
+}
+.hero-img{
+  margin-left: 40px;
+  margin-top: 65px;
+  width: 607px;
+  height:927px ;
+}
