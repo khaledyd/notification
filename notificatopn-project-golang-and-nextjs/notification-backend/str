@@ -1,0 +1,33 @@
+notification/
+├── cmd/
+│   └── main.go
+├── internal/
+│   ├── entity/
+│   │   └── notification.go
+│   ├── usecase/
+│   │   └── notification.go
+│   ├── repository/
+│   │   └── notification.go
+│   ├── delivery/
+│   │   ├── http/
+│   │   │   ├── handler/
+│   │   │   │   └── notification_handler.go
+│   │   │   ├── router/
+│   │   │   │   └── router.go
+│   │   │   └── server.go
+│   │   └── grpc/
+│   │       ├── notification.pb.go
+│   │       ├── notification.proto
+│   │       ├── notification_grpc.go
+│   │       └── notification_handler.go
+│   └── config/
+│       └── config.go
+├── pkg/
+│   ├── logger/
+│   │   └── logger.go
+│   └── database/
+│       └── database.go
+├── go.mod
+├── go.sum
+├── Dockerfile
+└── README.md
