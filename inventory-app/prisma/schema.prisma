@@ -1,0 +1,93 @@
+// This is your Prisma schema file,
+// learn more about it in the docs: https://pris.ly/d/prisma-schema
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "mongodb"
+  url      = env("DATABASE_URL")
+}
+
+// Define useradmin data model
+model UserAdminInfo {
+  // id is mongodb _id
+  id        String   @id @default(auto()) @map("_id") @db.ObjectId
+  email     String   @unique
+  name      String
+  password  String
+  isAdmin   Boolean  @default(true)
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+
+  // define relationship
+  tokens     Token[]
+  Product    Product[]
+  Sale       Sale[]
+  userportal UserPortalInfo[]
+}
+
+/// define token data model
+model Token {
+  id          String   @id @default(auto()) @map("_id") @db.ObjectId
+  accessToken String   @unique
+  createdAt   DateTime @default(now())
+  updatedAt   DateTime @updatedAt
+
+  // define relationship
+  user         UserAdminInfo   @relation(fields: [userId], references: [id])
+  userId       String          @db.ObjectId
+  userportal   UserPortalInfo? @relation(fields: [userportalId], references: [id])
+  userportalId String          @db.ObjectId
+}
+
+// DEFINE PRODUCT DATA MODEL
+model Product {
+  id             String         @id @default(auto()) @map("_id") @db.ObjectId
+  sku            Int            @unique
+  name           String
+  description    String?
+  costPrice      Float?
+  otherCosts     Float?
+  sellingPrice   Float?
+  profitMargin   Float?
+  quantity       Int
+  user           UserAdminInfo? @relation(fields: [createdByEmail], references: [email])
+  createdByEmail String?
+  createdAt      DateTime       @default(now())
+  updatedAt      DateTime       @updatedAt
+
+  sales Sale[]
+}
+
+// DEFINE SALE DATA MODEL
+
+model Sale {
+  id             String         @id @default(auto()) @map("_id") @db.ObjectId
+  sku            Int
+  product        Product?       @relation(fields: [sku], references: [sku])
+  user           UserAdminInfo? @relation(fields: [createdByEmail], references: [email])
+  createdByEmail String?
+  quantity       Int
+  totalPrice     Float?
+  createdAt      DateTime       @default(now())
+  updatedAt      DateTime       @updatedAt
+}
+
+// DEFINE USER DATA MODEL
+
+model UserPortalInfo {
+  id             String         @id @default(auto()) @map("_id") @db.ObjectId
+  email          String         @unique
+  name           String
+  password       String
+  createdAt      DateTime       @default(now())
+  updatedAt      DateTime       @updatedAt
+  //define tye admin created
+  admin          UserAdminInfo? @relation(fields: [createdByEmail], references: [email])
+  createdByEmail String?
+
+  // define relationship
+  tokens Token[]
+}
